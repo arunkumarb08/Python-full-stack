@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Stocks &amp; Investment Products - Zerodha</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.3rem;
+            color: #1e293b;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* 3-Column Grid Layout */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .card:hover {
+            border-color: #387ed1;
+            box-shadow: 0 12px 28px rgba(56, 126, 209, 0.12);
+            transform: translateY(-4px);
+        }
+
+        /* Highlighted/Active Card State */
+        .card.active {
+            border-color: #387ed1;
+            background: #ffffff;
+            box-shadow: 0 12px 28px rgba(56, 126, 209, 0.14);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background-color: #eff6ff;
+            color: #387ed1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.65;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .card a {
+            color: #387ed1;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease, gap 0.2s ease;
+        }
+
+        .card a:hover {
+            color: #1a56a0;
+            gap: 9px;
+        }
+
+        .badge {
+            background-color: #f1f5f9;
+            color: #475569;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .badge-free {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
+
+        .back-nav {
+            margin-bottom: 25px;
+        }
+
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .back-nav a:hover {
+            color: #387ed1;
+        }
+
+        @media (max-width: 992px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Back Navigation -->
+        <div class="back-nav">
+            <a href="index.html"><i class="bi bi-arrow-left"></i> Back to Zerodha Home</a>
+        </div>
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Explore investment options</h1>
+            <p>Everything from equities and derivatives to mutual funds, bonds, and IPOs in one single account.</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="card-grid">
+            
+            <!-- Card 1: Stocks -->
+            <div class="card active">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h2>Stocks (Equity)</h2>
+                    <p>Invest in over 5000+ listed companies across NSE and BSE with zero brokerage on delivery trades.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#pricing">Explore Stocks <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge badge-free">₹0 Brokerage</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Mutual Funds -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-pie-chart"></i>
+                    </div>
+                    <h2>Direct Mutual Funds</h2>
+                    <p>Invest in direct mutual funds directly through Coin with 0% distributor commission and easy SIPs.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#products">Explore Coin <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge badge-free">0% Commission</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Futures & Options -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h2>Futures &amp; Options</h2>
+                    <p>Trade equity, currency, and commodity derivatives with flat ₹20 per executed order and low margin.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#pricing">Explore F&amp;O <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge">Flat ₹20</span>
+                </div>
+            </div>
+
+            <!-- Card 4: IPOs -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <h2>Initial Public Offerings (IPO)</h2>
+                    <p>Apply for all upcoming and current IPOs seamlessly using your UPI ID within seconds.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#products">Apply for IPO <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge badge-free">Easy UPI</span>
+                </div>
+            </div>
+
+            <!-- Card 5: Fixed Income & Bonds -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h2>Government Securities &amp; Bonds</h2>
+                    <p>Invest in sovereign gold bonds (SGB), treasury bills (T-Bills), and government dated securities.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#products">Explore Bonds <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge">Safe &amp; Sovereign</span>
+                </div>
+            </div>
+
+            <!-- Card 6: Trading APIs -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h2>Kite Connect APIs</h2>
+                    <p>Build custom algorithmic trading models and full-fledged fintech products on top of Zerodha's infrastructure.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="index.html#products">View Documentation <i class="bi bi-arrow-right"></i></a>
+                    <span class="badge">Developer APIs</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
