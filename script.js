@@ -61,9 +61,17 @@
 
 
 
-function add(a,b){
-    return a+b
-}
+// function add(a,b){
+//     return a+b
+// }
 
-console.log(add);
-console.log(add(2,3));
+// console.log(add);
+// console.log(add(2,3));
+
+
+let add = (a,b) => {
+    return a+b
+};
+let diff = (a,b) => a-b;
+
+console.log(add(a,b))
