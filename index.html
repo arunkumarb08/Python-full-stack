@@ -1,461 +1,853 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerodha - Online stock trading at lowest prices</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="https://zerodha.com/static/images/favicon.ico">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom Stylesheet -->
+    <title>Visual Studio Code</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body bgcolor="#0d1117" text="white">
 
-    <!-- ================= NAVBAR ================= -->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha Logo" class="logo">
-                </a>
-                
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Header -->
+    <table width="100%" cellpadding="15">
+        <tr>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#signup">Signup</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#support">Support</a>
-                        </li>
-                        <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link menu-icon" href="#" aria-label="More options">
-                                <i class="bi bi-list"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+            <td width="25%">
+                <font size="5">
+                    <b>🔷 Visual Studio Code</b>
+                </font>
+            </td>
 
-    <main>
-        <!-- ================= HERO SECTION ================= -->
-        <section class="hero-section" id="signup">
-            <div class="container">
-                <img src="https://zerodha.com/static/images/landing.png" alt="Zerodha Investment Platform" class="hero-image img-fluid">
-                <h1 class="hero-title">Invest in everything</h1>
-                <p class="hero-subtitle">Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-                <a href="#open-account" class="btn btn-zerodha-blue">Sign up for free</a>
-            </div>
-        </section>
+            <td>
+                Features
+            </td>
+
+            <td>
+                Docs
+            </td>
+
+            <td>
+                Release Notes
+            </td>
+
+            <td>
+                Blog
+            </td>
+
+            <td>
+                Learn
+            </td>
+
+            <td>
+                Events
+            </td>
+
+            <td>
+                Resources
+            </td>
+
+            <td>
+                <input type="text" id="searchBox" placeholder="Search">
+
+<button onclick="searchPage()">
+Search
+</button>
+            </td>
+
+            <td>
+                <button onclick="toggleTheme()">
+🌙
+</button>
+            </td>
+
+            <td>
+                <button onclick="downloadVSCode()">
+    Download
+</button>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Banner -->
+    <center>
+
+        <p>
+            💻
+            <u>
+                Rewatch VS Code Live at MS Build 2026
+            </u>
+        </p>
+
+    </center>
+
+    <hr>
+
+    <!-- Main heading -->
+
+    <center>
+
+        <br><br>
+
+        <font size="7">
+            <b>The open source AI code editor</b>
+        </font>
+
+        <br><br>
+
+        <font size="5">
+            <b>Your home for multi-agent development</b>
+        </font>
+
+        <br><br><br>
+
+        <!-- Download Box -->
+
+        <table width="450" cellpadding="25" bgcolor="blue">
+            <tr>
+                <td align="center">
+                    <button onclick="scrollTopPage()">
+⬆ Top
+</button>
+
+                    <button>
+                        ⊞ &nbsp;
+                        <font size="4">
+                            <button onclick="downloadVSCode()">
+    Download for Windows
+</button>
+                        </font>
+                    </button>
+
+                    <br><br>
+
+                    <u>
+                        Web, Insiders edition, or other platforms
+                    </u>
+
+                    <br><br>
+
+                    <small>
+                        By using VS Code, you agree to its
+                        <u>license</u> and
+                        <u>privacy statement.</u>
+                    </small>
+
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <!-- Image / Editor Section -->
+
+        <table width="70%" cellpadding="20" bgcolor="#1683ff">
+
+            <tr>
+
+                <td>
+
+                    <table width="100%" bgcolor="#15191e" cellpadding="15">
+
+                        <tr>
+
+                            <td width="30%">
+                                <b>MailList.tsx</b>
+                            </td>
+
+                            <td width="35%">
+                                <b>REFACTOR MAILLIST COMPONENT</b>
+                            </td>
+
+                            <td width="35%">
+                                <b>SESSIONS</b>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td valign="top">
+
+                                <font color="gray">
+                                    1<br>
+                                    2<br>
+                                    3<br>
+                                    4<br>
+                                    5<br>
+                                    6<br>
+                                    7<br>
+                                    8
+                                </font>
+
+                                <br><br>
+
+                                <font color="lightblue">
+                                    import
+                                </font>
+                                <font color="white">
+                                    {<br>
+                                    &nbsp;&nbsp;For,<br>
+                                    &nbsp;&nbsp;Show,<br>
+                                    &nbsp;&nbsp;createMemo,<br>
+                                    &nbsp;&nbsp;createSignal<br>
+                                    }
+                                </font>
+
+                            </td>
+
+                            <td valign="top">
+
+                                <table width="100%" bgcolor="#292d32" cellpadding="15">
+
+                                    <tr>
+                                        <td>
+
+                                            Extract each row in
+                                            <b>MailList.tsx</b>
+                                            into a standalone
+                                            <b>MailListItem</b>
+                                            component.
+
+                                            <br><br>
+
+                                            Preserve selection state,
+                                            keyboard navigation, and
+                                            existing virtualization behavior.
+
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </td>
+
+                            <td valign="top">
+
+                                <table width="100%" cellpadding="10">
+
+                                    <tr>
+                                        <td bgcolor="#292d32">
+                                            <b>New Session</b>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            ◯ Refactor MailList component
+                                            <br>
+                                            <small>Thinking...</small>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            ◯ Wire MCP server for
+                                            telemetry...
+                                            <br>
+                                            <small>Editing mcp.config.ts</small>
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+        <!-- Code with Extensions -->
+
+<table width="85%" cellpadding="20">
+    <tr>
+
+        <!-- Left side -->
+        <td width="35%" valign="top">
+
+            <br><br>
+
+            <font size="6">
+                <b>Code with extensions</b>
+            </font>
+
+            <br><br>
+
+            <font size="4">
+                Extend your agents with tools from extensions
+                and Model Context Protocol servers. Or, build
+                <font color="#3794ff">
+                    <u>your own extension</u>
+                </font>
+                to power your team's unique scenarios.
+            </font>
+
+        </td>
 
 
-         <div class="container">
-        <!-- Header Section -->
-        <div class="header">
-           <center>
-            <h1>Explore stocks</h1>
-            </center>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-        </div>
+        <!-- Right side -->
+        <td width="65%">
 
-      
-        <div class="card-grid">
-            
-            <div class="card active">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+            <table width="100%" cellpadding="15">
 
-            
-            <div class="card">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+                <!-- Row 1 -->
+                <tr>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+                    <td width="33%" bgcolor="#171a1f">
+                        <font size="5">🐍</font>
+                        <font size="4">
+                            <b>Python</b>
+                        </font>
 
-            <!-- Card 4 -->
-            <div class="card">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+                        <br>
 
-            <!-- Card 5 -->
-            <div class="card">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+                        <font color="#9dbbe8">
+                            Adds rich language
+                            support for Python
+                        </font>
+                    </td>
 
-            <!-- Card 6 -->
-            <div class="card">
-                <div>
-                    <h2>Stocks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vero?</p>
-                </div>
-                <a href="#">Learn more</a>
-            </div>
+                    <td width="33%" bgcolor="#171a1f">
+                        <font size="5">🟪</font>
+                        <font size="4">
+                            <b>Stripe</b>
+                        </font>
 
-        </div>
-    </div>
+                        <br>
 
-        <!-- ================= TRUST & ECOSYSTEM SECTION ================= -->
-        <section class="trust-section" id="about">
-            <div class="container">
-                <div class="row align-items-center gy-5">
-                    <!-- Left Column: Trust Points -->
-                    <div class="col-lg-6">
-                        <h2 class="section-heading-large">Trust with confidence</h2>
-                        
-                        <div class="feature-block">
-                            <h3 class="feature-title">Customer-first always</h3>
-                            <p class="feature-desc">That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.</p>
-                        </div>
+                        <font color="#9dbbe8">
+                            Build, test, and use Stripe
+                            inside your editor
+                        </font>
+                    </td>
 
-                        <div class="feature-block">
-                            <h3 class="feature-title">No spam or gimmicks</h3>
-                            <p class="feature-desc">No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like.</p>
-                        </div>
+                    <td width="33%" bgcolor="#171a1f">
+                        <font size="5">⚙️</font>
+                        <font size="4">
+                            <b>C/C++</b>
+                        </font>
 
-                        <div class="feature-block">
-                            <h3 class="feature-title">The Zerodha universe</h3>
-                            <p class="feature-desc">Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
-                        </div>
+                        <br>
 
-                        <div class="feature-block">
-                            <h3 class="feature-title">Do better with money</h3>
-                            <p class="feature-desc">With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
-                        </div>
-                    </div>
+                        <font color="#9dbbe8">
+                            Adds rich language
+                            support for C/C++
+                        </font>
+                    </td>
 
-                    <!-- Right Column: Ecosystem Image & Links -->
-                    <div class="col-lg-6 text-center">
-                        <img src="https://zerodha.com/static/images/ecosystem.png" alt="Zerodha Ecosystem Products" class="ecosystem-img img-fluid">
-                        <div class="mt-4">
-                            <a href="#products" class="link-arrow">Explore our products <i class="bi bi-arrow-right"></i></a>
-                            <a href="https://kite-demo.zerodha.com" target="_blank" rel="noopener noreferrer" class="link-arrow">Try Kite demo <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </tr>
 
-                <!-- Press Logos -->
-                <div class="row mt-5">
-                    <div class="col-12 text-center">
-                        <img src="https://zerodha.com/static/images/press-logos.png" alt="Zerodha Featured In Press" class="press-logos img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- ================= PRODUCTS GRID SECTION ================= -->
-        <section class="products-section" id="products">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Technology &amp; Products</h2>
-                    <p class="section-para">Sleek, modern, and intuitive trading platforms designed for active traders and passive investors.</p>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card-item">
-                        <div>
-                            <h3>Kite</h3>
-                            <p>Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    <div class="product-card-item">
-                        <div>
-                            <h3>Console</h3>
-                            <p>The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    <div class="product-card-item">
-                        <div>
-                            <h3>Coin</h3>
-                            <p>Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your mobile app.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    <div class="product-card-item">
-                        <div>
-                            <h3>Kite Connect API</h3>
-                            <p>Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our client base.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    <div class="product-card-item">
-                        <div>
-                            <h3>Varsity Mobile</h3>
-                            <p>An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    <div class="product-card-item">
-                        <div>
-                            <h3>TradingQ&amp;A</h3>
-                            <p>The most active trading and investment community in India for all your market related queries. Ask questions and get answers from experts.</p>
-                        </div>
-                        <a href="#" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <!-- Row 2 -->
+                <tr>
 
-        <!-- ================= PRICING SECTION ================= -->
-        <section class="pricing-section" id="pricing">
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <!-- Left Column -->
-                    <div class="col-lg-5">
-                        <h2 class="section-heading-large mb-3">Unbeatable pricing</h2>
-                        <p class="text-secondary mb-4">We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
-                        <a href="#pricing-breakdown" class="link-arrow">See full pricing <i class="bi bi-arrow-right"></i></a>
-                    </div>
+                    <td bgcolor="#171a1f">
+                        <font size="5">📓</font>
+                        <font size="4">
+                            <b>Jupyter</b>
+                        </font>
 
-                    <!-- Right Column: Pricing Cards -->
-                    <div class="col-lg-7">
-                        <div class="row g-3">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="pricing-card">
-                                    <img src="https://zerodha.com/static/images/pricing-eq.svg" alt="Free Account Opening">
-                                    <p class="pricing-card-text">Free account opening</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="pricing-card">
-                                    <img src="https://zerodha.com/static/images/pricing-eq.svg" alt="Free Equity Delivery">
-                                    <p class="pricing-card-text">Free equity delivery and direct mutual funds</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="pricing-card">
-                                    <img src="https://zerodha.com/static/images/other-trades.svg" alt="Intraday and F&O Trades">
-                                    <p class="pricing-card-text">Intraday and F&amp;O trades</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <br>
 
-                <!-- Detailed Pricing Table -->
-                <div class="pricing-table-section" id="pricing-breakdown">
-                    <h3 class="feature-title mb-3">Charges Breakdown</h3>
-                    <div class="table-container">
-                        <table class="pricing-table">
-                            <thead>
-                                <tr>
-                                    <th>Segment</th>
-                                    <th>Brokerage Fee</th>
-                                    <th>STT / CTT</th>
-                                    <th>Transaction Charges</th>
-                                    <th>GST</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Equity Delivery</strong></td>
-                                    <td>₹0 (Free)</td>
-                                    <td>0.1% on buy &amp; sell</td>
-                                    <td>NSE: 0.00297%, BSE: 0.00375%</td>
-                                    <td>18% on (Brokerage + SEBI charges + txn charges)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Equity Intraday</strong></td>
-                                    <td>0.03% or ₹20/executed order whichever is lower</td>
-                                    <td>0.025% on the sell side</td>
-                                    <td>NSE: 0.00297%, BSE: 0.00375%</td>
-                                    <td>18% on (Brokerage + SEBI charges + txn charges)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Equity Futures</strong></td>
-                                    <td>0.03% or ₹20/executed order whichever is lower</td>
-                                    <td>0.02% on the sell side</td>
-                                    <td>NSE: 0.00173%, BSE: 0</td>
-                                    <td>18% on (Brokerage + SEBI charges + txn charges)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Equity Options</strong></td>
-                                    <td>Flat ₹20 per executed order</td>
-                                    <td>0.125% on buy (on premium), 0.0625% on sell</td>
-                                    <td>NSE: 0.03503% (on premium)</td>
-                                    <td>18% on (Brokerage + SEBI charges + txn charges)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Direct Mutual Funds</strong></td>
-                                    <td>₹0 (Free)</td>
-                                    <td>Nil</td>
-                                    <td>Nil</td>
-                                    <td>Nil</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <font color="#9dbbe8">
+                            Language support for
+                            Jupyter Notebooks
+                        </font>
+                    </td>
 
-        <!-- ================= VARSITY / EDUCATION SECTION ================= -->
-        <section class="education-section bg-light" id="support">
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <div class="col-lg-5 text-center">
-                        <img src="https://zerodha.com/static/images/index-education.svg" alt="Free Stock Market Education" class="varsity-img img-fluid">
-                    </div>
-                    <div class="col-lg-7 ps-lg-5">
-                        <h2 class="section-heading-large mb-4">Free and open market education</h2>
-                        
-                        <div class="mb-4">
-                            <p class="text-secondary mb-2">Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading.</p>
-                            <a href="#" class="link-arrow">Varsity <i class="bi bi-arrow-right"></i></a>
-                        </div>
+                    <td bgcolor="#171a1f">
+                        <font size="5">🔮</font>
+                        <font size="4">
+                            <b>GitLens</b>
+                        </font>
 
-                        <div>
-                            <p class="text-secondary mb-2">TradingQ&amp;A, the most active trading and investment community in India for all your market related queries.</p>
-                            <a href="#" class="link-arrow">TradingQ&amp;A <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <br>
 
-        <!-- ================= OPEN ACCOUNT CTA SECTION ================= -->
-        <section class="cta-section" id="open-account">
-            <div class="container">
-                <h2 class="cta-title">Open a Zerodha account</h2>
-                <p class="cta-subtitle">Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&amp;O trades.</p>
-                <a href="#signup" class="btn btn-zerodha-blue">Sign up for free</a>
-            </div>
-        </section>
-    </main>
+                        <font color="#9dbbe8">
+                            Supercharge your Git
+                            experience
+                        </font>
+                    </td>
 
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <div class="container">
-            <div class="row gy-4">
-                <!-- Column 1: Brand & Social -->
-                <div class="col-lg-3 col-md-6">
-                    <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha Logo" class="footer-logo">
-                    <p class="footer-copy">&copy; 2010 - 2026, Zerodha Broking Ltd.<br>All rights reserved.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
+                    <td bgcolor="#171a1f">
+                        <font size="5">🟣</font>
+                        <font size="4">
+                            <b>C# Dev Kit</b>
+                        </font>
 
-                <!-- Column 2: Company -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-column-title">Company</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Referral programme</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Zerodha.tech</a></li>
-                        <li><a href="#">Press &amp; media</a></li>
-                        <li><a href="#">Zerodha Cares (CSR)</a></li>
-                    </ul>
-                </div>
+                        <br>
 
-                <!-- Column 3: Support -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-column-title">Support</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Support portal</a></li>
-                        <li><a href="#">Z-Connect blog</a></li>
-                        <li><a href="#">List of charges</a></li>
-                        <li><a href="#">Downloads &amp; resources</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Market overview</a></li>
-                        <li><a href="#">How to file a complaint?</a></li>
-                        <li><a href="#">Status of your complaints</a></li>
-                    </ul>
-                </div>
+                        <font color="#9dbbe8">
+                            Powerful tools for your C#
+                            environment
+                        </font>
+                    </td>
 
-                <!-- Column 4: Account -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-column-title">Account</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Open an account</a></li>
-                        <li><a href="#">Fund transfer</a></li>
-                        <li><a href="#">60 day challenge</a></li>
-                    </ul>
-                </div>
-            </div>
+                </tr>
 
-            <!-- Regulatory Disclaimer -->
-            <div class="footer-disclaimer">
-                <p>Zerodha Broking Ltd.: Member of NSE, BSE​ &amp;​ MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.: INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any complaints pertaining to securities broking please write to complaints@zerodha.com, for DP related to dp@zerodha.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
-                <p>Procedure to file a complaint on SEBI SCORES: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy redressal of the grievances</p>
-                <p>Smart Online Dispute Resolution | Grievances Redressal Mechanism</p>
-                <p>Investments in securities market are subject to market risks; read all the related documents carefully before investing.</p>
-                <p>Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number with your stock broker / depository participant and receive OTP directly from depository on your e-mail and/or mobile number to create pledge. 3) Check your Securities / MF / DP holding in the consolidated account statement issued by NSDL/CDSL every month.</p>
-                <p>"Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers. Receive information of your transactions directly from Exchange on your mobile/email at the end of the day. Issued in the interest of investors. KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary." Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque. Please write the Bank account number and sign the IPO application form to authorize your bank to make payment in case of allotment. In case of non allotment the funds will remain in your bank account. As a business we don't give stock tips, and have not authorized anyone to trade on behalf of others. If you find anyone claiming to be part of Zerodha and offering such services, please create a ticket here.</p>
-            </div>
 
-            <!-- Footer Sublinks -->
-            <div class="footer-sublinks">
-                <a href="#">NSE</a>
-                <a href="#">BSE</a>
-                <a href="#">MCX</a>
-                <a href="#">Terms &amp; conditions</a>
-                <a href="#">Policies &amp; procedures</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Disclosure</a>
-                <a href="#">For investor's attention</a>
-                <a href="#">Investor charter</a>
-            </div>
-        </div>
-    </footer>
+                <!-- Row 3 -->
+                <tr>
 
-    <!-- Bootstrap 5 Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+                    <td bgcolor="#171a1f">
+                        <font size="5">🍃</font>
+                        <font size="4">
+                            <b>MongoDB</b>
+                        </font>
+
+                        <br>
+
+                        <font color="#9dbbe8">
+                            Extension for the
+                            @MongoDB agent
+                        </font>
+                    </td>
+
+                    <td bgcolor="#171a1f">
+                        <font size="5">🔷</font>
+                        <font size="4">
+                            <b>GitHub Copilot for Azure</b>
+                        </font>
+
+                        <br>
+
+                        <font color="#9dbbe8">
+                            Streamline the process of
+                            developing for Azure
+                        </font>
+                    </td>
+
+                    <td bgcolor="#171a1f">
+                        <font size="5">🔵</font>
+                        <font size="4">
+                            <b>Remote Development</b>
+                        </font>
+
+                        <br>
+
+                        <font color="#9dbbe8">
+                            Open folders in a
+                            container on a remote machine
+                        </font>
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br>
+
+            <p align="right">
+
+                <b>
+                    View 80k+ extensions in the
+                    <font color="#3794ff">
+                        <u>Extension Marketplace</u>
+                    </font>
+                </b>
+
+            </p>
+
+        </td>
+
+    </tr>
+</table>
+
+
+<br><br><br>
+
+
+<!-- Code in any language -->
+
+<table width="85%" cellpadding="20">
+
+    <tr>
+
+        <!-- Left -->
+        <td width="35%" valign="top">
+
+            <font size="6">
+                <b>Code in any language</b>
+            </font>
+
+            <br><br>
+
+            <font size="4" color="#9dbbe8">
+                VS Code supports almost every major
+                programming language.
+            </font>
+
+        </td>
+
+
+        <!-- Right -->
+        <td width="65%">
+
+            <table width="100%" cellpadding="15">
+
+                <tr>
+
+                    <td>
+                        <font size="5" color="#dcdc40">
+                            <b>JS</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>JavaScript</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5" color="#3794ff">
+                            <b>TS</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>TypeScript</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5">🐍</font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>Python</b>
+                        </font>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <font size="5" color="#3794ff">
+                            <b>C#</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>C#</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5" color="#3794ff">
+                            <b>C++</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>C++</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5" color="#e44d26">
+                            <b>HTML</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>HTML</b>
+                        </font>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <font size="5" color="#f0db4f">
+                            <b>☕</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>Java</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5" color="#563d7c">
+                            <b>PHP</b>
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>PHP</b>
+                        </font>
+                    </td>
+
+                    <td>
+                        <font size="5">
+                            🐘
+                        </font>
+
+                        &nbsp;&nbsp;
+
+                        <font size="4">
+                            <b>SQL</b>
+                        </font>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<br><br><br>
+
+
+<!-- VS Code Features Section -->
+
+<table width="90%" cellpadding="10" cellspacing="10" align="center">
+
+    <!-- Row 1 -->
+    <tr>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">▻</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Integrated terminal</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Use your favorite shell whether it's zsh,
+                            pwsh, or git bash, all inside the editor.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">▷</font>
+                        <br><br>
+                        <font size="4">
+                            <button onclick="runDemo()">
+Run Code
+</button>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Run and debug your code without
+                            leaving your editor.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">♧</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Version control</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Built-in support for git and many other
+                            source control providers.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">🛠</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Build tasks</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Run tools and analyze their results
+                            from within VS Code.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+    </tr>
+
+
+    <!-- Row 2 -->
+    <tr>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">↶</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Local history</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Never lose your changes with
+                            automatically tracked local history.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">♧</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Themes</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Your theme is an extension of your
+                            personality. Add some flair to your
+                            editor and add your touch.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">⌨</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Accessibility</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Optimized experience for screen
+                            readers, high contrast themes, and
+                            keyboard-only navigation.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="25%" bgcolor="#171a1f" style="border:1px solid #30363d; border-radius:10px;">
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td>
+                        <font size="5" color="#3794ff">◎</font>
+                        <br><br>
+                        <font size="4">
+                            <b>Web support</b>
+                        </font>
+                        <br><br>
+                        <font size="3" color="#9dbbe8">
+                            Whether you are on your phone,
+                            tablet, or desktop, you can access your
+                            code from anywhere.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+    </tr>
+
+</table>
+
+<br><br><br><br>
+
+
+<!-- Footer Social Links -->
+
+<table width="85%" align="center" cellpadding="10">
+    <tr>
+
+        <td align="left">
+            <font size="5" color="#8b949e">
+                ◉ &nbsp; 𝕏 &nbsp; in &nbsp; 🦋 &nbsp; ● &nbsp; 🎙 &nbsp; ♪ &nbsp; ▶
+            </font>
+        </td>
+
+        <td align="right">
+            <font size="5" color="#9dbbe8">
+                ▦
+            </font>
+        </td>
+
+    </tr>
+
+    
+</table>
+
+<br><br>
+
+<hr>
+
+
+    </center>
+
+    <!-- Footer -->
+
+    <hr>
+
+    <center>
+        <p>
+            Visual Studio Code &nbsp; | &nbsp;
+            Features &nbsp; | &nbsp;
+            Documentation &nbsp; | &nbsp;
+            Blog
+        </p>
+
+        <p>
+            © 2026 Visual Studio Code
+        </p>
+    </center>
+<script src="script.js"></script>
 </body>
 </html>
