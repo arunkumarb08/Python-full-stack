@@ -1,77 +1,54 @@
-// let a ={
-//     title: "pfsd",
-//     description: "full stack",
-//     triner: "name"
-// }
-
-// console.log(a['title']);
-// console.log(typeof(a));
-
-
-// let k = { name: "name" };
-// let y = k;
-
-// k.name = "naveen";
-// console.log(k);
-// console.log(y);
-
-
-
-// let course = ["pfsd", "jfsd", "mern"];
-// console.log(course);
-// console.log(typeof(course));
-// console.log(course[0]);
-// console.log(course[1]);
-
-// console.log(course[2]);
-
-
-
-
-
-
-
-// function createCourse(coursename){
-//     console.log('creating' + coursename);
-// }
-
-// var m = 10;
-// console.log(m)
-// createCourse('pfsd')
-// createCourse('jsfd')
-
-// var a = 100;
-// console.log(a);
-// console.log(this.a);
-// console.log(window.a);
-
-
-
-// {
-//     let z = 10;
-//     var o = 20;
-//     const v = 30;
-
-// }
-// console.log(z);
-// console.log(o);
-// console.log(v);
-
-
-
-
-
-// function add(a,b){
-//     return a+b
-// }
-
-// console.log(add);
-// console.log(add(2,3));
-
-
-let add = (a,b) => {
-    return a+b
+// Welcome Message
+window.onload = function () {
+    console.log("Welcome to Visual Studio Code Clone");
 };
-let diff = (a,b) => a-b;
 
-console.log(add(a,b))
+// Download Button
+function downloadVSCode() {
+    window.open("https://code.visualstudio.com/download", "_blank");
+}
+
+// Theme Toggle
+function toggleTheme() {
+    document.body.classList.toggle("light-theme");
+}
+
+// Scroll to Top
+function scrollTopPage() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+// Search
+function searchPage() {
+    let word = prompt("Enter text to search:");
+
+    if (word == null || word == "") {
+        return;
+    }
+
+    if (document.body.innerText.toLowerCase().includes(word.toLowerCase())) {
+        alert("'" + word + "' found on this page.");
+    } else {
+        alert("'" + word + "' not found.");
+    }
+}
+
+// Show Current Date and Time
+function showTime() {
+    let now = new Date();
+    alert(now.toLocaleString());
+}
+
+// Welcome Alert
+function welcome() {
+    alert("Welcome to the VS Code Clone Website!");
+}
+
+function runDemo(){
+
+    alert("Running Code...");
+
+}
